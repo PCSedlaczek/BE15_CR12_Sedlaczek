@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 02, 2022 at 05:56 PM
+-- Generation Time: Apr 04, 2022 at 07:27 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -36,6 +36,7 @@ CREATE TABLE `offers` (
   `country` varchar(53) NOT NULL,
   `description` text DEFAULT NULL,
   `price` decimal(10,2) DEFAULT NULL,
+  `per` enum('day','week','weekend') DEFAULT NULL,
   `latitude` decimal(10,8) DEFAULT NULL,
   `longitude` decimal(11,8) DEFAULT NULL,
   `img` varchar(50) DEFAULT NULL,
@@ -48,8 +49,12 @@ CREATE TABLE `offers` (
 -- Dumping data for table `offers`
 --
 
-INSERT INTO `offers` (`id`, `location`, `city`, `country`, `description`, `price`, `latitude`, `longitude`, `img`, `src`, `url`, `free`) VALUES
-(1, 'New Camping Le Tamerici', 'Cecina Mare', 'Italy', 'On the Tuscan Costa degli Etruschi (Etruscan Coast), in the resort town of Marina di Cecina, you will find New Camping Le Tamerici. Here you are staying on a well maintained, level camping site on the edge of a pine forest, approx. 500 m from the beach. Apart from relaxing on the beach or around the pool, you can also make lovely excursions into Tuscany from here.', '450.00', '47.69647190', '13.34575820', 'Cecina_distance_Moralist_Wikimedia.jpg', 'Moralist, Wikimedia Commons', 'https://commons.wikimedia.org/wiki/File:Cecina_distance.JPG', 'Available');
+INSERT INTO `offers` (`id`, `location`, `city`, `country`, `description`, `price`, `per`, `latitude`, `longitude`, `img`, `src`, `url`, `free`) VALUES
+(1, 'New Camping Le Tamerici', 'Cecina Mare', 'Italy', 'On the Tuscan Costa degli Etruschi (Etruscan Coast), in the resort town of Marina di Cecina, you will find New Camping Le Tamerici. Here you are staying on a well maintained, level camping site on the edge of a pine forest, approx. 500 m from the beach. Apart from relaxing on the beach or around the pool, you can also make lovely excursions into Tuscany from here.', '450.00', 'week', '47.69647190', '13.34575820', 'Cecina_distance_Moralist_Wikimedia.jpg', 'Moralist, Wikimedia Commons', 'https://commons.wikimedia.org/wiki/File:Cecina_distance.JPG', 'Available'),
+(2, 'New Camping Le Tamerici', 'Cecina Mare', 'Italy', 'On the Tuscan Costa degli Etruschi (Etruscan Coast), in the resort town of Marina di Cecina, you will find New Camping Le Tamerici. Here you are staying on a well maintained, level camping site on the edge of a pine forest, approx. 500 m from the beach. Apart from relaxing on the beach or around the pool, you can also make lovely excursions into Tuscany from here.', '450.00', 'week', '47.69647190', '13.34575820', 'Cecina_distance_Moralist_Wikimedia.jpg', 'Moralist, Wikimedia Commons', 'https://commons.wikimedia.org/wiki/File:Cecina_distance.JPG', 'Available'),
+(3, 'New Camping Le Tamerici', 'Cecina Mare', 'Italy', 'On the Tuscan Costa degli Etruschi (Etruscan Coast), in the resort town of Marina di Cecina, you will find New Camping Le Tamerici. Here you are staying on a well maintained, level camping site on the edge of a pine forest, approx. 500 m from the beach. Apart from relaxing on the beach or around the pool, you can also make lovely excursions into Tuscany from here.', '450.00', 'week', '47.69647190', '13.34575820', 'Cecina_distance_Moralist_Wikimedia.jpg', 'Moralist, Wikimedia Commons', 'https://commons.wikimedia.org/wiki/File:Cecina_distance.JPG', 'Available'),
+(4, 'New Camping Le Tamerici', 'Cecina Mare', 'Italy', 'On the Tuscan Costa degli Etruschi (Etruscan Coast), in the resort town of Marina di Cecina, you will find New Camping Le Tamerici. Here you are staying on a well maintained, level camping site on the edge of a pine forest, approx. 500 m from the beach. Apart from relaxing on the beach or around the pool, you can also make lovely excursions into Tuscany from here.', '450.00', 'week', '47.69647190', '13.34575820', 'Cecina_distance_Moralist_Wikimedia.jpg', 'Moralist, Wikimedia Commons', 'https://commons.wikimedia.org/wiki/File:Cecina_distance.JPG', 'Available'),
+(5, 'New Camping Le Tamerici', 'Cecina Mare', 'Italy', 'On the Tuscan Costa degli Etruschi (Etruscan Coast), in the resort town of Marina di Cecina, you will find New Camping Le Tamerici. Here you are staying on a well maintained, level camping site on the edge of a pine forest, approx. 500 m from the beach. Apart from relaxing on the beach or around the pool, you can also make lovely excursions into Tuscany from here.', '450.00', 'week', '47.69647190', '13.34575820', 'Cecina_distance_Moralist_Wikimedia.jpg', 'Moralist, Wikimedia Commons', 'https://commons.wikimedia.org/wiki/File:Cecina_distance.JPG', 'Available');
 
 --
 -- Indexes for dumped tables
@@ -69,7 +74,7 @@ ALTER TABLE `offers`
 -- AUTO_INCREMENT for table `offers`
 --
 ALTER TABLE `offers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

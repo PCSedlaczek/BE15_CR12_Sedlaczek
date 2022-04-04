@@ -6,7 +6,8 @@ CREATE TABLE offers (
   city VARCHAR (45) NOT NULL,
   country VARCHAR (53) NOT NULL,
   description TEXT,
-  price DECIMAL(10,2), 
+  price DECIMAL(10,2),
+  per ENUM("day","week","weekend"), 
   latitude DECIMAL(10,8),
   longitude DECIMAL(11,8),
   img VARCHAR(50),
@@ -16,6 +17,10 @@ CREATE TABLE offers (
 );
 
 INSERT INTO offers 
-  (location, city, country, description, price, latitude, longitude, img, src, url)
+  (location, city, country, description, price, per, latitude, longitude, img, src, url)
 VALUES
-  ("New Camping Le Tamerici","Cecina Mare","Italy","On the Tuscan Costa degli Etruschi (Etruscan Coast), in the resort town of Marina di Cecina, you will find New Camping Le Tamerici. Here you are staying on a well maintained, level camping site on the edge of a pine forest, approx. 500 m from the beach. Apart from relaxing on the beach or around the pool, you can also make lovely excursions into Tuscany from here.",450,47.6964719,13.3457582,"Cecina_distance_Moralist_Wikimedia.jpg","Moralist, Wikimedia Commons","https://commons.wikimedia.org/wiki/File:Cecina_distance.JPG");
+  ("New Camping Le Tamerici","Cecina Mare","Italy","On the Tuscan Costa degli Etruschi (Etruscan Coast), in the resort town of Marina di Cecina, you will find New Camping Le Tamerici. Here you are staying on a well maintained, level camping site on the edge of a pine forest, approx. 500 m from the beach. Apart from relaxing on the beach or around the pool, you can also make lovely excursions into Tuscany from here.",450,"week",47.6964719,13.3457582,"Cecina_distance_Moralist_Wikimedia.jpg","Moralist, Wikimedia Commons","https://commons.wikimedia.org/wiki/File:Cecina_distance.JPG"),
+  ("New Camping Le Tamerici","Cecina Mare","Italy","On the Tuscan Costa degli Etruschi (Etruscan Coast), in the resort town of Marina di Cecina, you will find New Camping Le Tamerici. Here you are staying on a well maintained, level camping site on the edge of a pine forest, approx. 500 m from the beach. Apart from relaxing on the beach or around the pool, you can also make lovely excursions into Tuscany from here.",450,"week",47.6964719,13.3457582,"Cecina_distance_Moralist_Wikimedia.jpg","Moralist, Wikimedia Commons","https://commons.wikimedia.org/wiki/File:Cecina_distance.JPG"),
+  ("New Camping Le Tamerici","Cecina Mare","Italy","On the Tuscan Costa degli Etruschi (Etruscan Coast), in the resort town of Marina di Cecina, you will find New Camping Le Tamerici. Here you are staying on a well maintained, level camping site on the edge of a pine forest, approx. 500 m from the beach. Apart from relaxing on the beach or around the pool, you can also make lovely excursions into Tuscany from here.",450,"week",47.6964719,13.3457582,"Cecina_distance_Moralist_Wikimedia.jpg","Moralist, Wikimedia Commons","https://commons.wikimedia.org/wiki/File:Cecina_distance.JPG"),
+  ("New Camping Le Tamerici","Cecina Mare","Italy","On the Tuscan Costa degli Etruschi (Etruscan Coast), in the resort town of Marina di Cecina, you will find New Camping Le Tamerici. Here you are staying on a well maintained, level camping site on the edge of a pine forest, approx. 500 m from the beach. Apart from relaxing on the beach or around the pool, you can also make lovely excursions into Tuscany from here.",450,"week",47.6964719,13.3457582,"Cecina_distance_Moralist_Wikimedia.jpg","Moralist, Wikimedia Commons","https://commons.wikimedia.org/wiki/File:Cecina_distance.JPG"),
+  ("New Camping Le Tamerici","Cecina Mare","Italy","On the Tuscan Costa degli Etruschi (Etruscan Coast), in the resort town of Marina di Cecina, you will find New Camping Le Tamerici. Here you are staying on a well maintained, level camping site on the edge of a pine forest, approx. 500 m from the beach. Apart from relaxing on the beach or around the pool, you can also make lovely excursions into Tuscany from here.",450,"week",47.6964719,13.3457582,"Cecina_distance_Moralist_Wikimedia.jpg","Moralist, Wikimedia Commons","https://commons.wikimedia.org/wiki/File:Cecina_distance.JPG");
