@@ -28,7 +28,7 @@ Mount Everest Travel Agency
   - [ ] Read
   - [ ] Update
   - [ ] Delete
-- [*x*] Details file with more information about offer
+- [*] Details file with more information about offer
 
 ## API
 - [ ] Google Maps API for location on Details page
@@ -45,6 +45,6 @@ Mount Everest Travel Agency
 - [x] Format documents in Visual Studio Code
 - [x] Push files to GitHub repository
 - [x] Send repository link through LMS
-- [ ] Invite codefactorygit as collaborator
+- [x] Invite codefactorygit as collaborator
 
 Work time: 13:30 hrs
