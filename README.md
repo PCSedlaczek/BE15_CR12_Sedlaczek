@@ -9,8 +9,8 @@ Mount Everest Travel Agency
 - [x] Research travel agency websites for inspiration
 
 ## Design
-- [*] Nice looking website
-- [ ] Responsive
+- [x] Nice looking website
+- [x] Responsive
 
 ## MySQL Database 
 - [x] Create db BE15_CR12_Mount_Everest_Sedlaczek
@@ -20,26 +20,26 @@ Mount Everest Travel Agency
   - [x] description
   - [x] longitude
   - [x] latitude
-- [*] Insert test data into database
+- [x] Insert test data into database
 
 ## PHP CRUD
-- [ ] CRUD for touristic agency offers
-  - [ ] Create
-  - [ ] Read
-  - [ ] Update
-  - [ ] Delete
-- [*] Details file with more information about offer
+- [x] CRUD for touristic agency offers
+  - [x] Create
+  - [x] Read
+  - [x] Update
+  - [x] Delete
+- [x] Details file with more information about offer
 
 ## API
-- [ ] Google Maps API for location on Details page
+- [*] Google Maps API for location on Details page
 - [*] Create display API from database
   - [*] Return JSON object with all information
   - [x] Single displayAll.php file
   - [x] Link in home page leading to API
 
 ## Bonus
-- [ ] showAll.php file
-  - [ ] Button to show all API data with AJAX
+- [x] showAll.php file
+  - [x] Button to show all API data with AJAX
 
 ## Finalize
 - [x] Format documents in Visual Studio Code
@@ -47,4 +47,4 @@ Mount Everest Travel Agency
 - [x] Send repository link through LMS
 - [x] Invite codefactorygit as collaborator
 
-Work time: 13:30 hrs
+Work time: 26:45 hrs
