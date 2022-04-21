@@ -31,9 +31,9 @@ Mount Everest Travel Agency
 - [x] Details file with more information about offer
 
 ## API
-- [*] Google Maps API for location on Details page
-- [*] Create display API from database
-  - [*] Return JSON object with all information
+- [x] Google Maps API for location on Details page
+- [x] Create display API from database
+  - [x] Return JSON object with all information
   - [x] Single displayAll.php file
   - [x] Link in home page leading to API
 
@@ -47,4 +47,4 @@ Mount Everest Travel Agency
 - [x] Send repository link through LMS
 - [x] Invite codefactorygit as collaborator
 
-Work time: 26:45 hrs
+Work time: 27:00 hrs
