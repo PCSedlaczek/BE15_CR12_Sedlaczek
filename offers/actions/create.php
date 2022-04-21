@@ -1,6 +1,5 @@
 <?php
 require_once "../../api/connect.php";
-require_once "../../php/upload.php";
 
 if ($_POST) {
   $location = $_POST["location"];
@@ -16,9 +15,6 @@ if ($_POST) {
   $src = $_POST["src"];
   $url = $_POST["url"];
   $free = $_POST["free"];
-
-  // Variable for image upload errors
-  $uploadError = "";
 
   $query = "INSERT INTO offers (location, city, region, country, description, price, per, latitude, longitude, img, src, url, free) VALUES ('$location', '$city', '$region', '$country', '$description', $price, '$per', '$latitude', '$longitude', '$img', '$src', '$url', '$free')";
 
@@ -82,8 +78,6 @@ if ($_POST) {
   else {
     $class = "danger";
     $message = "Error while creating record. Try again:<br>".$connect->error;
-    $uploadError = ($img->error != 0) ?
-      $img->ErrorMessage : "";
     header("refresh:2;url=../../manage.html");
   }
   mysqli_close($connect);
@@ -110,7 +104,6 @@ else {
     </div>
     <div class="alert alert-<?=$class?>" role="alert">
       <p><?=($message) ?? ""?></p>
-      <p><?=($uploadError) ?? ""?></p>
     </div>
   </div>
 </body>

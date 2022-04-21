@@ -1,6 +1,5 @@
 <?php
 require_once "../../api/connect.php";
-require_once "../../php/upload.php";
 
 if ($_POST) {
   $id = $_POST["id"];
@@ -71,7 +70,6 @@ else {
     </div>
     <div class="alert alert-<?=$class?>" role="alert">
       <p><?=($message) ?? ""?></p>
-      <p><?=($uploadError) ?? ""?></p>
     </div>
   </div>
 </body>
