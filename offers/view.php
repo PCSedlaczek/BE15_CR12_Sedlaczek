@@ -79,7 +79,7 @@ else {
               </p>
               <p>
                 <b>Price:</b>
-                  From <?=$price?>/<?=$per?>
+                  From <?=$price?>€/<?=$per?>
                 </a>
               <p>
               <p>
@@ -106,26 +106,27 @@ else {
 
     </div>
   </div>
-
-<script>
-// Google Maps Script
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtjaD-saUZQ47PbxigOg25cvuO6_SuX3M&callback=initMap" async defer></script>
+  <script>
   var map;
   function initMap() {
-      var location = {
-      lat: <?=$entry["latitude"]?>,
-      lng: <?=$entry["longitude"]?>
+    var location = {
+    lat: <?=$entry["latitude"]?>,
+    lng: <?=$entry["longitude"]?>
     };
-    map = new google.maps.Map(document.getElementById('map'), {
+
+    map = new google.maps.Map(document.getElementById("map"), {
       center: location,
       zoom: 8
     });
     var pinpoint = new google.maps.Marker({
       position: location,
       map: map
-        });
+      });
     }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtjaD-saUZQ47PbxigOg25cvuO6_SuX3M&callback=initMap" async defer></script>
+    initMap()
+  </script>
 
 </body>
 

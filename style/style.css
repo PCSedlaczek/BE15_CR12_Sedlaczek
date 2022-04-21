@@ -18,6 +18,11 @@ h2 {
   font-size: 5rem;
 }
 
+/* Links */
+a {
+  text-decoration: none !important;
+}
+
 /* Colors */
 .nav-link {
   color:white !important;
@@ -44,7 +49,7 @@ body {
   object-position: center;
 }
 
-
-a {
-  text-decoration: none !important;
+/* Google Map */
+#map {
+  height: 50vh
 }
