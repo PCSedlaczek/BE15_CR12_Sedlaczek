@@ -1,6 +1,6 @@
 <?php
 
-require_once "connect.php";
+require_once "../api/connect.php";
 
 // Database query
 $table = "offers";

@@ -5,9 +5,11 @@ require_once "response.php";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $location = $_POST["location"];
   $city = $_POST["city"];
+  $region = $_POST["region"];
   $country = $_POST["country"];
   $description = $_POST["description"];
   $price = $_POST["price"];
+  $per = $_POST["per"];
   $latitude = $_POST["latitude"];
   $longitude = $_POST["longitude"];
   $img = $_POST["img"];

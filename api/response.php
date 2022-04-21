@@ -7,6 +7,5 @@ function response($status, $message, $data)
     "message" => $message,
     "data" => $data,
   ];
-
   echo json_encode($response);
 }
