@@ -66,15 +66,15 @@ require_once "../api/connect.php";
           </td>
         </tr>
         <tr>
-          <th>Longitude</th>
-          <td>
-            <input class="form-control" type="text" name="longitude" placeholder="Longitude">
-          </td>
-        </tr>
-        <tr>
           <th>Latitude</th>
           <td>
             <input class="form-control" type="text" name="latitude" placeholder="Latitude">
+          </td>
+        </tr>
+        <tr>
+          <th>Longitude</th>
+          <td>
+            <input class="form-control" type="text" name="longitude" placeholder="Longitude">
           </td>
         </tr>
         <tr>

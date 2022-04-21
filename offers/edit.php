@@ -106,15 +106,15 @@ else {
           </td>
         </tr>
         <tr>
-          <th>Longitude</th>
-          <td>
-            <input class="form-control" type="text" name="longitude" placeholder="Longitude" value="<?=$longitude?>">
-          </td>
-        </tr>
-        <tr>
           <th>Latitude</th>
           <td>
             <input class="form-control" type="text" name="latitude" placeholder="Latitude" value="<?=$latitude?>">
+          </td>
+        </tr>
+        <tr>
+          <th>Longitude</th>
+          <td>
+            <input class="form-control" type="text" name="longitude" placeholder="Longitude" value="<?=$longitude?>">
           </td>
         </tr>
         <tr>
